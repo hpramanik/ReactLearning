@@ -14,7 +14,7 @@ export const ComponentWithCreateElement = () => {
   const body = 'Hello World';
 
   return createElement('div', { style: { width: '100%' } }, [
-    createElement('h1', { key: 'title-elem' }, title),
+    createElement('h1', { key: 'title-elem' }, title), // key is passed to avoid a warning in console. Will learn about it later.
     createElement('br', { key: 'break-elem' }),
     createElement('p', { key: 'body-elem' }, body),
   ]);
