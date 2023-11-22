@@ -1,9 +1,12 @@
 export interface IncrementProps {
-  value: number;
+  value: Readonly<number>;
   setValue: (newValue: number) => void;
 }
 
-export const Increment = ({ value, setValue: setNumber }: IncrementProps) => {
+export const Increment = ({
+  value,
+  setValue: setNumber,
+}: Readonly<IncrementProps>) => {
   return (
     <div>
       <span>{value}</span>
