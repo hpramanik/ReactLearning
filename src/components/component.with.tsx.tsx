@@ -9,7 +9,7 @@ export const ComponentWithTSX = () => {
           ])"
   */
 
-  const title = 'Hello from Component With Create Element';
+  const title = 'Hello from Component With TSX Element';
   const body = 'Hello World';
 
   return (
